@@ -55,7 +55,7 @@ function buyProduct(e) {
   const basketItem = globalBasket.find((basketItem) => basketItem.id == prodId);
 
   if (basketItem) {
-    basketItem.amount = +1;
+    basketItem.amount += 1;
   } else {
     globalBasket.push({ ...item, amount: 1 });
   }

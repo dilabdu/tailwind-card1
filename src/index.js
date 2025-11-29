@@ -3,5 +3,5 @@ export function calculatePrice(price){
         style:"currency",
         currency:"EUR",
     }).format(price)
-    console.log(_price)
+  return _price;
 }
